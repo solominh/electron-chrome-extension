@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Dict capture",
+  "version": "1.0",
+  "description": "Dictionary text capture.",
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/content_script.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "contextMenus",
+    "tabs",
+    "nativeMessaging"
+  ]
+}

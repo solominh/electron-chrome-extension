@@ -1,0 +1,28 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package_win": "electron-packager . --out=./build/ app --platform=win32 --arch=x64 --electronVersion=1.6.1 --asar=true --overwrite=true --icon=./images/icon.ico"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.6.1",
+    "electron-packager": "^8.5.2"
+  },
+  "dependencies": {
+    "chrome-native-messaging": "^0.2.0",
+    "messenger": "0.0.9"
+  }
+}
